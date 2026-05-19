@@ -1,57 +1,48 @@
 # Scalable Job Board Platform
 
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
-![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white)
-![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+A full-stack scalable job board platform built with React, TypeScript, Express.js, PostgreSQL, Prisma ORM, and Redis.
 
-A polished full-stack job board built with React, TypeScript, Express, PostgreSQL, and Prisma.
+The platform supports candidate job applications, employer job management, resume uploads, application tracking, role-based authentication, Redis caching, and advanced job search functionality.
 
-Scalable Job Board Platform supports two core workflows: candidates can discover and apply for jobs, while employers can manage companies, post jobs, and review applicants.
-
-The project demonstrates production-minded patterns such as JWT authentication, role-based authorization, file uploads, search and filtering, protected routes, and a responsive dashboard experience.
-
-## Highlights
-
-- Full-stack TypeScript application
-- Candidate and employer role flows
-- PDF resume upload for applications
-- Employer application review workflow
-- PostgreSQL schema managed with Prisma ORM
-- JWT auth with protected frontend routes
-- Responsive UI styled with Tailwind CSS
-- Optional Redis caching layer for future scaling
+---
 
 ## Features
 
-### Candidate Features
+## Candidate Features
+- User registration and login
+- JWT-based authentication
+- Browse jobs and companies
+- Smart keyword and location search
+- Filter by salary, job type, and remote jobs
+- Save jobs for later
+- Apply to jobs with PDF resume upload
+- View uploaded resumes
+- Track application statuses
+- Withdraw applications
 
-- Browse public job listings
-- Search and filter jobs
-- Apply with PDF resume upload
-- Track submitted applications
-- Save and unsave jobs
+## Employer Features
+- Employer authentication and authorization
+- Create and manage company profiles
+- Create and edit job postings
+- Employer analytics dashboard
+- View received applications
+- Download candidate resumes
+- Review cover letters
+- Mark applications as reviewed
+- Shortlist or reject candidates
 
-### Employer Features
-
-- Create and manage companies
-- Post and edit jobs
-- Review submitted applications
-- View and download resumes
-- Manage application statuses
-
-### Platform Features
-
-- JWT authentication
+## Platform Features
 - Role-based authorization
-- Responsive UI
-- Search and filtering
-- Public company and job pages
-- Protected dashboards
-- Toast notifications for key user actions
+- Secure protected API routes
+- Redis caching support
+- Global API rate limiting
+- Responsive modern UI
+- Advanced filtering and search
+- Prisma ORM integration
+- PostgreSQL relational database
+- Reusable React component architecture
+
+---
 
 ## Screenshots
 
@@ -59,113 +50,110 @@ The project demonstrates production-minded patterns such as JWT authentication, 
 
 ## Home Page
 
-![Home Page](./frontend/public/screenshots/home-page.png)
+<img width="1883" height="907" alt="home-page png" src="https://github.com/user-attachments/assets/9f884a8d-e7be-4056-90d9-491fb1323aab" />
 
 ---
 
 ## Smart Job Search
 
-![Job Search](./frontend/public/screenshots/job-search.png)
+<img width="1887" height="912" alt="job-search png" src="https://github.com/user-attachments/assets/a888f6bf-def7-46a4-a542-57af805cf35b" />
 
 ---
 
 ## Jobs Page
 
-![Jobs Page](./frontend/public/screenshots/jobs-page.png)
+<img width="1883" height="915" alt="jobs-page png" src="https://github.com/user-attachments/assets/5475b0af-9389-4428-a509-5845179c0e72" />
 
 ---
 
 ## Companies Page
 
-![Companies Page](./frontend/public/screenshots/companies-page.png)
+<img width="1900" height="785" alt="companies-page png" src="https://github.com/user-attachments/assets/29eccb93-7d7c-4ccc-a6f0-3f3003476d57" />
 
 ---
 
 ## Candidate Dashboard
 
-![Candidate Dashboard](./frontend/public/screenshots/candidate-dashboard.png)
+<img width="1887" height="921" alt="candidate-dashboard png" src="https://github.com/user-attachments/assets/2143954d-7873-493f-b607-f4d37fc90d96" />
 
 ---
 
 ## Saved Jobs
 
-![Saved Jobs](./frontend/public/screenshots/saved-jobs.png)
+<img width="1431" height="467" alt="saved-jobs png" src="https://github.com/user-attachments/assets/dd1bf3a3-0056-40c1-8aeb-e3f514fc9590" />
 
 ---
 
 ## My Applications
 
-![My Applications](./frontend/public/screenshots/my-applications.png)
+<img width="1257" height="898" alt="my-applications png" src="https://github.com/user-attachments/assets/18648b3d-b692-4fa6-8424-2a16075a639c" />
 
 ---
 
 ## Employer Stats
 
-![Employer Stats](./frontend/public/screenshots/employer-stats.png)
+<img width="1251" height="382" alt="employer-stats png" src="https://github.com/user-attachments/assets/b4fc4cc2-f21b-432e-bd57-e60ebb7678ac" />
 
 ---
 
 ## Employer Dashboard
 
-![Employer Dashboard](./frontend/public/screenshots/employer-dashboard.png)
+<img width="918" height="928" alt="employer-dashboard png" src="https://github.com/user-attachments/assets/63b0124c-0d4b-454d-b3db-f12c475125f6" />
 
 ---
 
 ## Applications Received
 
-![Applications Received](./frontend/public/screenshots/applications-received.png)
+<img width="1118" height="795" alt="applications-received png" src="https://github.com/user-attachments/assets/f40c9772-d382-414c-badb-668b5bdb0bf8" />
 
-## Tech Stack
+---
 
-### Frontend
+# Tech Stack
 
+## Frontend
 - React
 - TypeScript
+- Vite
 - Tailwind CSS
 - Axios
 - React Router
-- React Hot Toast
-- Vite
 
-### Backend
-
+## Backend
 - Node.js
-- Express
+- Express.js
 - TypeScript
 - Prisma ORM
-- PostgreSQL
 - JWT Authentication
-- Multer for resume uploads
-- Zod validation
+- Multer File Uploads
 
-## Architecture
+## Database & Caching
+- PostgreSQL
+- Redis
+
+## DevOps & Security
+- Rate Limiting
+- Role-Based Access Control
+- Environment Variables
+- REST API Architecture
+
+---
+
+# Architecture Overview
 
 ```text
-+--------------------------+
-|       React Client       |
-|  React Router + Axios    |
-+------------+-------------+
-             |
-             | HTTP / JSON
-             v
-+--------------------------+
-|       Express API        |
-| Auth, Validation, REST   |
-+------------+-------------+
-             |
-             | Prisma ORM
-             v
-+--------------------------+
-|      PostgreSQL DB       |
-| Users, Jobs, Companies   |
-+--------------------------+
+Browser / React Frontend
+        ↓
+Axios HTTP Requests
+        ↓
+Express.js REST API
+        ↓
+Prisma ORM
+        ↓
+PostgreSQL Database
 
-Optional:
-+--------------------------+
-|       Redis Cache        |
-| Disabled locally by env  |
-+--------------------------+
+Redis Cache Layer
 ```
+---
 
 ## Database Models
 
@@ -187,6 +175,8 @@ Optional:
 - Candidate saved jobs
 - Employer application review and status updates
 - Public platform stats for the home page
+
+---
 
 ## Project Structure
 
@@ -214,6 +204,8 @@ Optional:
 |-- package.json
 `-- README.md
 ```
+
+---
 
 ## Local Setup
 
@@ -295,6 +287,7 @@ Frontend runs at:
 ```text
 http://localhost:5173
 ```
+---
 
 ## Environment Variables
 
@@ -309,28 +302,7 @@ http://localhost:5173
 | `RATE_LIMIT_WINDOW_MS` | Rate limit window |
 | `RATE_LIMIT_MAX_REQUESTS` | Max requests per rate limit window |
 
-## Demo Accounts
-
-Seeded users use:
-
-```text
-password123
-```
-
-Employer accounts:
-
-```text
-employer.acme@example.com
-employer.northstar@example.com
-```
-
-Candidate accounts:
-
-```text
-candidate.jane@example.com
-candidate.miguel@example.com
-candidate.aisha@example.com
-```
+---
 
 ## Useful Commands
 
@@ -347,6 +319,8 @@ npm run dev
 npm run build
 ```
 
+---
+
 ## Deployment
 
 Deployment details will be added here.
@@ -358,18 +332,38 @@ Suggested deployment path:
 - Database: Managed PostgreSQL
 - Resume uploads: Cloud storage
 
+---
+
+# Project Goals
+
+This project was designed to simulate a production-style scalable hiring platform with real-world workflows for both candidates and employers.
+
+The architecture focuses on:
+- scalability
+- modular backend structure
+- reusable frontend components
+- secure authentication
+- efficient database handling
+- optimized user experience
+
+---
+
 ## Future Improvements
 
-- Admin dashboard
+- Docker containerization
+- Kubernetes deployment
+- AWS deployment support
 - Real-time notifications
 - Email integration
-- Docker deployment
-- Cloud storage for uploaded resumes
-- Advanced analytics for employers
-- Saved searches and job alerts
+- Interview scheduling
+- AI-powered job recommendations
+- Resume parsing
+- Admin analytics dashboard
+- WebSocket live updates
 
-## Portfolio Notes
+---
+# Author
 
-This project is designed to show end-to-end product thinking: data modeling, API design, authentication, authorization, file uploads, frontend routing, form handling, error states, and role-specific dashboards.
+Prachi Bhavsar
 
-It is suitable for demonstrating full-stack engineering skills to recruiters and technical reviewers.
+MS Information Technology @ Arizona State University
