@@ -1,91 +1,148 @@
 # Scalable Job Board Platform
 
-A full-stack job board platform built with a TypeScript Express backend, PostgreSQL, Prisma, Redis, and a React Vite frontend.
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-The application supports public job browsing, employer job creation, candidate applications, JWT authentication, role-based authorization, Redis caching, global rate limiting, and seeded demo data.
+A polished full-stack job board built with React, TypeScript, Express, PostgreSQL, and Prisma.
 
-## Overview
+Scalable Job Board Platform supports two core workflows: candidates can discover and apply for jobs, while employers can manage companies, post jobs, and review applicants.
 
-This project models a scalable job board where:
+The project demonstrates production-minded patterns such as JWT authentication, role-based authorization, file uploads, search and filtering, protected routes, and a responsive dashboard experience.
 
-- Employers can register, log in, create company profiles, and create job posts under those companies.
-- Candidates can register, log in, browse jobs, apply for jobs, and view their applications.
-- Public users can browse jobs, companies, and users.
-- The backend protects write operations with JWT authentication and role checks.
-- Redis improves read performance for job listing requests.
+## Highlights
 
-## Live Architecture Explanation
+- Full-stack TypeScript application
+- Candidate and employer role flows
+- PDF resume upload for applications
+- Employer application review workflow
+- PostgreSQL schema managed with Prisma ORM
+- JWT auth with protected frontend routes
+- Responsive UI styled with Tailwind CSS
+- Optional Redis caching layer for future scaling
+
+## Features
+
+### Candidate Features
+
+- Browse public job listings
+- Search and filter jobs
+- Apply with PDF resume upload
+- Track submitted applications
+- Save and unsave jobs
+
+### Employer Features
+
+- Create and manage companies
+- Post and edit jobs
+- Review submitted applications
+- View and download resumes
+- Manage application statuses
+
+### Platform Features
+
+- JWT authentication
+- Role-based authorization
+- Responsive UI
+- Search and filtering
+- Public company and job pages
+- Protected dashboards
+- Toast notifications for key user actions
+
+## Screenshots
+
+Add screenshots here before publishing:
+
+- Home Page
+- Jobs Page
+- Employer Dashboard
+- Candidate Dashboard
+- Applications Page
 
 ```text
-Browser / React Client
-  |
-  | Axios HTTP requests
-  v
-Express API Server
-  |
-  | Prisma ORM
-  v
-PostgreSQL Database
-
-Express API Server
-  |
-  | Redis client
-  v
-Redis Cache
+screenshots/home.png
+screenshots/jobs.png
+screenshots/employer-dashboard.png
+screenshots/candidate-dashboard.png
+screenshots/applications.png
 ```
-
-The frontend lives in `client/` and talks to the backend at `http://localhost:5000`. The backend exposes REST endpoints, validates requests with Zod, stores data through Prisma, caches job list responses in Redis, and enforces authentication and authorization with JWT middleware.
-
-## Backend Features
-
-- Express REST API with TypeScript
-- PostgreSQL database with Prisma ORM
-- JWT register/login authentication
-- bcrypt password hashing
-- Role-based authorization for `EMPLOYER` and `CANDIDATE`
-- Zod validation for request bodies and query params
-- Job search, filtering, pagination, and sorting
-- Redis caching for `GET /api/jobs`
-- Cache invalidation after job creation
-- Global rate limiting with `express-rate-limit`
-- Morgan request logging
-- Response time logging
-- Centralized environment configuration
-- Docker Compose for PostgreSQL and Redis
-- Rerunnable Prisma seed script
-
-## Frontend Features
-
-- React + TypeScript + Vite
-- Tailwind CSS styling
-- React Router pages
-- Axios API calls
-- Public job list and job details pages
-- Title, location, and job type filters
-- Pagination controls
-- Login and register forms
-- Auth context with localStorage persistence
-- Protected routes
-- Candidate application modal
-- Candidate My Applications page
-- Employer Dashboard with company profile and job creation forms
-- Role-aware navbar links
-- Loading, success, and error states
 
 ## Tech Stack
 
+### Frontend
+
+- React
+- TypeScript
+- Tailwind CSS
+- Axios
+- React Router
+- React Hot Toast
+- Vite
+
+### Backend
+
+- Node.js
+- Express
+- TypeScript
+- Prisma ORM
+- PostgreSQL
+- JWT Authentication
+- Multer for resume uploads
+- Zod validation
+
+## Architecture
+
 ```text
-Frontend:       React, TypeScript, Vite, Tailwind CSS, Axios, React Router
-Backend:        Node.js, Express, TypeScript
-Database:       PostgreSQL
-ORM:            Prisma
-Cache:          Redis
-Auth:           JWT, bcrypt
-Validation:     Zod
-Logging:        Morgan
-Rate limiting:  express-rate-limit
-Infra:          Docker Compose
++--------------------------+
+|       React Client       |
+|  React Router + Axios    |
++------------+-------------+
+             |
+             | HTTP / JSON
+             v
++--------------------------+
+|       Express API        |
+| Auth, Validation, REST   |
++------------+-------------+
+             |
+             | Prisma ORM
+             v
++--------------------------+
+|      PostgreSQL DB       |
+| Users, Jobs, Companies   |
++--------------------------+
+
+Optional:
++--------------------------+
+|       Redis Cache        |
+| Disabled locally by env  |
++--------------------------+
 ```
+
+## Database Models
+
+- `User` - candidate or employer account with authentication data and role.
+- `Company` - employer-managed company profile.
+- `Job` - job posting linked to a company.
+- `Application` - candidate application with resume, cover letter, and status.
+- `SavedJob` - candidate bookmark for jobs they want to revisit.
+
+## API Features
+
+- Register and login with JWT
+- Public job browsing
+- Job search, filtering, sorting, and pagination
+- Public company browsing
+- Employer company creation and updates
+- Employer job creation and updates
+- Candidate application submission with PDF upload
+- Candidate saved jobs
+- Employer application review and status updates
+- Public platform stats for the home page
 
 ## Project Structure
 
@@ -93,28 +150,20 @@ Infra:          Docker Compose
 .
 |-- client/
 |   |-- src/
-|   |   |-- api/                 Frontend Axios API helpers
-|   |   |-- components/          Reusable UI components
-|   |   |-- context/             Auth context
-|   |   |-- pages/               React Router pages
-|   |   |-- App.tsx
-|   |   `-- main.tsx
-|   |-- README.md
+|   |   |-- api/           Frontend API helpers
+|   |   |-- components/    Shared UI components
+|   |   |-- context/       Auth context
+|   |   |-- pages/         Route pages
+|   |   `-- utils/         Frontend utilities
 |   `-- package.json
 |-- prisma/
-|   |-- migrations/              Prisma migrations
-|   |-- schema.prisma            Database schema
-|   `-- seed.ts                  Demo seed data
+|   |-- schema.prisma      Database schema
+|   `-- seed.ts            Demo data
 |-- src/
-|   |-- config/                  Env and Redis config
-|   |-- db/                      Prisma client
-|   |-- middleware/              Rate limit and response time middleware
-|   |-- modules/
-|   |   |-- applications/
-|   |   |-- auth/
-|   |   |-- companies/
-|   |   |-- jobs/
-|   |   `-- users/
+|   |-- config/            Environment and Redis config
+|   |-- db/                Prisma client
+|   |-- middleware/        API middleware
+|   |-- modules/           Feature modules
 |   |-- app.ts
 |   `-- server.ts
 |-- docker-compose.yml
@@ -122,79 +171,103 @@ Infra:          Docker Compose
 `-- README.md
 ```
 
-## Environment Variables
+## Local Setup
 
-Create `.env` in the project root:
+### 1. Clone the repository
 
-```powershell
-@"
+```bash
+git clone <your-repo-url>
+cd Sclable
+```
+
+### 2. Install backend dependencies
+
+```bash
+npm install
+```
+
+### 3. Configure environment variables
+
+Create a `.env` file in the project root:
+
+```env
 PORT=5000
-DATABASE_URL=postgresql://postgres:postgres@127.0.0.1:5432/job_board_db
+DATABASE_URL=postgresql://postgres:password@127.0.0.1:5432/job_board_db
 JWT_SECRET=change-this-local-development-secret
+USE_REDIS=false
 REDIS_URL=redis://localhost:6379
 JOBS_CACHE_TTL_SECONDS=60
 RATE_LIMIT_WINDOW_MS=900000
 RATE_LIMIT_MAX_REQUESTS=100
-"@ | Set-Content .env
 ```
 
-Use a strong `JWT_SECRET` outside local development.
+### 4. Start PostgreSQL
 
-## Setup Instructions
+Use your local PostgreSQL instance or Docker Compose:
 
-Start PostgreSQL and Redis:
-
-```powershell
+```bash
 docker compose up -d
 ```
 
-Install backend dependencies:
+### 5. Run Prisma migrations
 
-```powershell
-npm install
-```
-
-Run database migrations:
-
-```powershell
+```bash
 npx prisma migrate dev
 ```
 
-Seed demo data:
+### 6. Seed demo data
 
-```powershell
+```bash
 npm run prisma:seed
 ```
 
-Start the backend:
+### 7. Start the backend
 
-```powershell
+```bash
 npm run dev
 ```
 
-Start the frontend in a second terminal:
-
-```powershell
-cd client
-npm install
-npm run dev
-```
-
-Open the frontend:
-
-```text
-http://localhost:5173
-```
-
-Backend base URL:
+Backend runs at:
 
 ```text
 http://localhost:5000
 ```
 
-## Seeded Accounts
+### 8. Install frontend dependencies
 
-All seeded users use:
+```bash
+cd client
+npm install
+```
+
+### 9. Start the frontend
+
+```bash
+npm run dev
+```
+
+Frontend runs at:
+
+```text
+http://localhost:5173
+```
+
+## Environment Variables
+
+| Variable | Description |
+| --- | --- |
+| `PORT` | Backend API port |
+| `DATABASE_URL` | PostgreSQL connection string |
+| `JWT_SECRET` | Secret used to sign JWT tokens |
+| `USE_REDIS` | Enables Redis caching when set to `true` |
+| `REDIS_URL` | Redis connection string |
+| `JOBS_CACHE_TTL_SECONDS` | Cache duration for job listings |
+| `RATE_LIMIT_WINDOW_MS` | Rate limit window |
+| `RATE_LIMIT_MAX_REQUESTS` | Max requests per rate limit window |
+
+## Demo Accounts
+
+Seeded users use:
 
 ```text
 password123
@@ -215,128 +288,44 @@ candidate.miguel@example.com
 candidate.aisha@example.com
 ```
 
-## API Endpoints
-
-```text
-GET  /health
-
-POST /api/auth/register
-POST /api/auth/login
-
-POST /api/users
-GET  /api/users
-
-POST /api/companies         EMPLOYER token required
-GET  /api/companies         Public
-
-POST /api/jobs              EMPLOYER token required
-GET  /api/jobs/employer/my-jobs
-GET  /api/jobs              Public, Redis cached
-GET  /api/jobs/:id          Public
-
-POST /api/applications      CANDIDATE token required
-GET  /api/applications
-GET  /api/applications/user/:userId
-```
-
-## Authentication And Authorization
-
-Register and login return a JWT token and safe user object.
-
-```json
-{
-  "success": true,
-  "token": "JWT_TOKEN",
-  "user": {
-    "id": 1,
-    "name": "Jane Candidate",
-    "email": "candidate.jane@example.com",
-    "role": "CANDIDATE"
-  }
-}
-```
-
-Protected requests use:
-
-```text
-Authorization: Bearer JWT_TOKEN
-```
-
-Authorization rules:
-
-- `EMPLOYER` users can create jobs.
-- `EMPLOYER` users can create companies.
-- `EMPLOYER` users can view jobs posted by their companies.
-- `CANDIDATE` users can apply for jobs.
-- Public users can browse jobs, companies, and users.
-
-Employer flow:
-
-```text
-Register/Login as Employer -> Create Company -> Post Job
-```
-
-## Scalability Features
-
-- Redis caches `GET /api/jobs` responses for 60 seconds.
-- Job cache keys include the full query string, so different filters and pages are cached separately.
-- Creating a job clears the jobs cache.
-- Rate limiting protects the API from repeated requests.
-- Prisma indexes support common job queries by title, location, job type, company, creation date, and salary.
-- Morgan and response time logs make API behavior easier to inspect during development.
-- Docker Compose keeps PostgreSQL and Redis setup repeatable.
-
-## Screenshots
-
-Add screenshots here before publishing:
-
-```text
-screenshots/home.png
-screenshots/jobs.png
-screenshots/job-details.png
-screenshots/login.png
-screenshots/employer-dashboard.png
-screenshots/my-applications.png
-```
-
-## Final Testing Checklist
-
-- `docker compose up -d` starts PostgreSQL and Redis.
-- `npm install` completes in the root project.
-- `npx prisma migrate dev` runs successfully.
-- `npm run prisma:seed` creates demo data.
-- `npm run build` passes for the backend.
-- `npm run dev` starts the backend on `http://localhost:5000`.
-- `cd client && npm install` completes.
-- `cd client && npm run build` passes.
-- `cd client && npm run dev` starts the frontend on `http://localhost:5173`.
-- Public users can view jobs and job details.
-- A candidate can log in, apply for a job, and view My Applications.
-- An employer can log in, create a company profile, and create a job from the Dashboard.
-- A candidate cannot create jobs.
-- An employer cannot apply for jobs.
-- Redis cache returns `X-Cache: HIT` on repeated `GET /api/jobs` requests.
-
-## Resume Bullet Points
-
-- Built a full-stack job board platform with React, TypeScript, Express, PostgreSQL, Prisma, Redis, and Docker Compose.
-- Implemented JWT authentication, bcrypt password hashing, protected routes, and role-based authorization for employer and candidate workflows.
-- Added employer company profile creation, employer job creation, candidate application flow, public job browsing, filtering, pagination, and job details pages.
-- Improved backend scalability with Redis caching, cache invalidation, global rate limiting, database indexes, and response time logging.
-- Created a rerunnable Prisma seed script with demo companies, employers, candidates, jobs, and applications.
-- Organized the codebase into beginner-friendly backend feature modules and reusable frontend components.
-
 ## Useful Commands
 
-```powershell
-docker compose up -d
-npm install
-npx prisma migrate dev
-npm run prisma:seed
+```bash
+# Backend
 npm run dev
 npm run build
+npm run prisma:seed
+npx prisma migrate dev
+
+# Frontend
 cd client
-npm install
 npm run dev
 npm run build
 ```
+
+## Deployment
+
+Deployment details will be added here.
+
+Suggested deployment path:
+
+- Frontend: Vercel, Netlify, or static hosting
+- Backend: Render, Railway, Fly.io, or container hosting
+- Database: Managed PostgreSQL
+- Resume uploads: Cloud storage
+
+## Future Improvements
+
+- Admin dashboard
+- Real-time notifications
+- Email integration
+- Docker deployment
+- Cloud storage for uploaded resumes
+- Advanced analytics for employers
+- Saved searches and job alerts
+
+## Portfolio Notes
+
+This project is designed to show end-to-end product thinking: data modeling, API design, authentication, authorization, file uploads, frontend routing, form handling, error states, and role-specific dashboards.
+
+It is suitable for demonstrating full-stack engineering skills to recruiters and technical reviewers.
