@@ -1,0 +1,494 @@
+
+> scalable-job-board-platform@1.0.0 dev
+> ts-node-dev --respawn --transpile-only src/server.ts
+
+[INFO] 17:53:21 ts-node-dev ver. 2.0.0 (using ts-node ver. 10.9.2, typescript ver. 5.9.3)
+Server is running on port 5000
+Redis connected
+[0mGET /api/companies [36m304[0m 110.952 ms - -[0m
+GET /api/companies completed in 113ms
+[0mGET /api/dashboard/public-stats [36m304[0m 116.630 ms - -[0m
+GET /api/dashboard/public-stats completed in 118ms
+[0mGET /api/jobs?page=1&limit=6 [36m304[0m 148.108 ms - -[0m
+GET /api/jobs?page=1&limit=6 completed in 148ms
+[0mPOST /api/auth/login [32m200[0m 67.843 ms - 384[0m
+POST /api/auth/login completed in 69ms
+[0mGET /api/jobs?page=1&limit=6 [36m304[0m 3.900 ms - -[0m
+GET /api/jobs?page=1&limit=6 completed in 4ms
+[0mGET /api/jobs?page=1&limit=6 [36m304[0m 3.388 ms - -[0m
+GET /api/jobs?page=1&limit=6 completed in 5ms
+[0mGET /api/jobs?page=1&limit=6 [36m304[0m 5.299 ms - -[0m
+GET /api/jobs?page=1&limit=6 completed in 6ms
+[0mGET /api/applications/user/me [32m200[0m 7.627 ms - 2674[0m
+GET /api/applications/user/me completed in 8ms
+[0mGET /api/saved-jobs/me [32m200[0m 8.222 ms - 2[0m
+GET /api/saved-jobs/me completed in 11ms
+[0mGET /api/saved-jobs/me [36m304[0m 9.034 ms - -[0m
+GET /api/saved-jobs/me completed in 11ms
+[0mGET /api/applications/user/me [36m304[0m 19.674 ms - -[0m
+GET /api/applications/user/me completed in 20ms
+[0mGET /api/jobs/33 [32m200[0m 4.627 ms - 833[0m
+GET /api/jobs/33 completed in 6ms
+[0mGET /api/applications/user/21 [32m200[0m 4.635 ms - 2674[0m
+GET /api/applications/user/21 completed in 5ms
+[0mGET /api/saved-jobs/me [36m304[0m 4.661 ms - -[0m
+GET /api/saved-jobs/me completed in 5ms
+[0mGET /api/jobs/33 [36m304[0m 6.207 ms - -[0m
+GET /api/jobs/33 completed in 8ms
+[0mGET /api/applications/user/21 [36m304[0m 8.227 ms - -[0m
+GET /api/applications/user/21 completed in 10ms
+[0mGET /api/saved-jobs/me [36m304[0m 9.507 ms - -[0m
+GET /api/saved-jobs/me completed in 11ms
+[0mGET /api/saved-jobs/me [36m304[0m 4.321 ms - -[0m
+GET /api/saved-jobs/me completed in 5ms
+[0mGET /api/applications/user/me [36m304[0m 6.508 ms - -[0m
+GET /api/applications/user/me completed in 7ms
+[0mGET /api/saved-jobs/me [36m304[0m 3.857 ms - -[0m
+GET /api/saved-jobs/me completed in 5ms
+[0mGET /api/applications/user/me [36m304[0m 3.693 ms - -[0m
+GET /api/applications/user/me completed in 5ms
+[0mGET /api/jobs?page=1&limit=6 [36m304[0m 2.407 ms - -[0m
+GET /api/jobs?page=1&limit=6 completed in 4ms
+[0mGET /api/jobs?page=1&limit=6 [36m304[0m 4.160 ms - -[0m
+GET /api/jobs?page=1&limit=6 completed in 4ms
+[0mGET /api/jobs?page=1&limit=6 [36m304[0m 2.986 ms - -[0m
+GET /api/jobs?page=1&limit=6 completed in 3ms
+[0mGET /api/saved-jobs/me [36m304[0m 2.649 ms - -[0m
+GET /api/saved-jobs/me completed in 4ms
+[0mGET /api/applications/user/me [36m304[0m 6.444 ms - -[0m
+GET /api/applications/user/me completed in 8ms
+[0mGET /api/saved-jobs/me [36m304[0m 5.110 ms - -[0m
+GET /api/saved-jobs/me completed in 6ms
+[0mGET /api/applications/user/me [36m304[0m 5.932 ms - -[0m
+GET /api/applications/user/me completed in 7ms
+[0mDELETE /api/applications/21 [32m200[0m 14.292 ms - 866[0m
+DELETE /api/applications/21 completed in 15ms
+[0mGET /api/jobs/5 [32m200[0m 4.497 ms - 648[0m
+GET /api/jobs/5 completed in 5ms
+[0mGET /api/applications/user/21 [32m200[0m 5.369 ms - 2676[0m
+GET /api/applications/user/21 completed in 6ms
+[0mGET /api/saved-jobs/me [36m304[0m 5.492 ms - -[0m
+GET /api/saved-jobs/me completed in 6ms
+[0mGET /api/jobs/5 [36m304[0m 5.645 ms - -[0m
+GET /api/jobs/5 completed in 7ms
+[0mGET /api/applications/user/21 [36m304[0m 5.018 ms - -[0m
+GET /api/applications/user/21 completed in 6ms
+[0mGET /api/saved-jobs/me [36m304[0m 5.395 ms - -[0m
+GET /api/saved-jobs/me completed in 6ms
+[0mGET /api/jobs?page=1&limit=6 [36m304[0m 3.341 ms - -[0m
+GET /api/jobs?page=1&limit=6 completed in 4ms
+[0mGET /api/jobs?page=1&limit=6 [36m304[0m 2.857 ms - -[0m
+GET /api/jobs?page=1&limit=6 completed in 4ms
+[0mGET /api/jobs?page=1&limit=6 [36m304[0m 1.667 ms - -[0m
+GET /api/jobs?page=1&limit=6 completed in 2ms
+[0mGET /api/applications/user/me [32m200[0m 3.854 ms - 2676[0m
+GET /api/applications/user/me completed in 5ms
+[0mGET /api/saved-jobs/me [36m304[0m 4.875 ms - -[0m
+GET /api/saved-jobs/me completed in 6ms
+[0mGET /api/saved-jobs/me [36m304[0m 2.860 ms - -[0m
+GET /api/saved-jobs/me completed in 4ms
+[0mGET /api/applications/user/me [36m304[0m 6.691 ms - -[0m
+GET /api/applications/user/me completed in 8ms
+[0mGET /api/jobs?page=1&limit=6 [36m304[0m 2.461 ms - -[0m
+GET /api/jobs?page=1&limit=6 completed in 3ms
+[0mGET /api/jobs?page=1&limit=6 [36m304[0m 2.527 ms - -[0m
+GET /api/jobs?page=1&limit=6 completed in 3ms
+[0mGET /api/jobs?page=1&limit=6 [36m304[0m 1.934 ms - -[0m
+GET /api/jobs?page=1&limit=6 completed in 2ms
+[0mGET /api/jobs/33 [36m304[0m 3.784 ms - -[0m
+GET /api/jobs/33 completed in 4ms
+[0mGET /api/applications/user/21 [36m304[0m 5.331 ms - -[0m
+GET /api/applications/user/21 completed in 6ms
+[0mGET /api/saved-jobs/me [36m304[0m 6.511 ms - -[0m
+GET /api/saved-jobs/me completed in 7ms
+[0mGET /api/jobs/33 [36m304[0m 4.563 ms - -[0m
+GET /api/jobs/33 completed in 5ms
+[0mGET /api/applications/user/21 [36m304[0m 5.464 ms - -[0m
+GET /api/applications/user/21 completed in 6ms
+[0mGET /api/saved-jobs/me [36m304[0m 6.188 ms - -[0m
+GET /api/saved-jobs/me completed in 6ms
+[0mPOST /api/saved-jobs/33 [32m201[0m 13.237 ms - 539[0m
+POST /api/saved-jobs/33 completed in 14ms
+[0mGET /api/saved-jobs/me [32m200[0m 3.629 ms - 541[0m
+GET /api/saved-jobs/me completed in 4ms
+[0mGET /api/applications/user/me [36m304[0m 4.060 ms - -[0m
+GET /api/applications/user/me completed in 5ms
+[0mGET /api/saved-jobs/me [36m304[0m 4.880 ms - -[0m
+GET /api/saved-jobs/me completed in 6ms
+[0mGET /api/applications/user/me [36m304[0m 4.486 ms - -[0m
+GET /api/applications/user/me completed in 5ms
+[0mDELETE /api/saved-jobs/33 [32m200[0m 8.070 ms - 60[0m
+DELETE /api/saved-jobs/33 completed in 9ms
+[0mGET /api/jobs?page=1&limit=6 [36m304[0m 12.685 ms - -[0m
+GET /api/jobs?page=1&limit=6 completed in 13ms
+[0mGET /api/jobs?page=1&limit=6 [36m304[0m 2.298 ms - -[0m
+GET /api/jobs?page=1&limit=6 completed in 4ms
+[0mGET /api/jobs?page=1&limit=6 [36m304[0m 2.526 ms - -[0m
+GET /api/jobs?page=1&limit=6 completed in 5ms
+[0mGET /api/jobs/27 [36m304[0m 3.346 ms - -[0m
+GET /api/jobs/27 completed in 4ms
+[0mGET /api/applications/user/21 [36m304[0m 3.780 ms - -[0m
+GET /api/applications/user/21 completed in 4ms
+[0mGET /api/saved-jobs/me [32m200[0m 4.141 ms - 2[0m
+GET /api/saved-jobs/me completed in 5ms
+[0mGET /api/jobs/27 [36m304[0m 3.050 ms - -[0m
+GET /api/jobs/27 completed in 4ms
+[0mGET /api/applications/user/21 [36m304[0m 3.649 ms - -[0m
+GET /api/applications/user/21 completed in 4ms
+[0mGET /api/saved-jobs/me [36m304[0m 4.291 ms - -[0m
+GET /api/saved-jobs/me completed in 6ms
+[0mPOST /api/saved-jobs/27 [32m201[0m 8.066 ms - 591[0m
+POST /api/saved-jobs/27 completed in 8ms
+[0mGET /api/applications/user/me [36m304[0m 3.499 ms - -[0m
+GET /api/applications/user/me completed in 5ms
+[0mGET /api/applications/user/me [36m304[0m 4.025 ms - -[0m
+GET /api/applications/user/me completed in 4ms
+[0mGET /api/applications/user/me [36m304[0m 4.446 ms - -[0m
+GET /api/applications/user/me completed in 5ms
+[0mGET /api/saved-jobs/me [32m200[0m 3.877 ms - 593[0m
+GET /api/saved-jobs/me completed in 4ms
+[0mGET /api/applications/user/me [36m304[0m 4.978 ms - -[0m
+GET /api/applications/user/me completed in 5ms
+[0mGET /api/saved-jobs/me [36m304[0m 3.183 ms - -[0m
+GET /api/saved-jobs/me completed in 3ms
+[0mGET /api/applications/user/me [36m304[0m 3.617 ms - -[0m
+GET /api/applications/user/me completed in 4ms
+[0mGET /api/applications/user/me [36m304[0m 4.954 ms - -[0m
+GET /api/applications/user/me completed in 5ms
+[0mGET /api/applications/user/me [36m304[0m 4.463 ms - -[0m
+GET /api/applications/user/me completed in 6ms
+[0mGET /api/saved-jobs/me [36m304[0m 4.588 ms - -[0m
+GET /api/saved-jobs/me completed in 5ms
+[0mGET /api/applications/user/me [36m304[0m 4.003 ms - -[0m
+GET /api/applications/user/me completed in 5ms
+[0mGET /api/saved-jobs/me [36m304[0m 4.125 ms - -[0m
+GET /api/saved-jobs/me completed in 6ms
+[0mGET /api/applications/user/me [36m304[0m 5.433 ms - -[0m
+GET /api/applications/user/me completed in 6ms
+[0mGET /api/applications/user/me [36m304[0m 4.474 ms - -[0m
+GET /api/applications/user/me completed in 5ms
+[0mGET /api/applications/user/me [36m304[0m 5.145 ms - -[0m
+GET /api/applications/user/me completed in 5ms
+[0mGET /api/saved-jobs/me [36m304[0m 3.288 ms - -[0m
+GET /api/saved-jobs/me completed in 3ms
+[0mGET /api/applications/user/me [36m304[0m 4.270 ms - -[0m
+GET /api/applications/user/me completed in 5ms
+[0mGET /api/saved-jobs/me [36m304[0m 4.389 ms - -[0m
+GET /api/saved-jobs/me completed in 5ms
+[INFO] 17:57:55 Restarting: C:\Users\Admin\Desktop\Sclable\src\middleware\resumeUpload.middleware.ts has been modified
+Server is running on port 5000
+[INFO] 17:57:59 Restarting: C:\Users\Admin\Desktop\Sclable\src\app.ts has been modified
+Server is running on port 5000
+[INFO] 17:58:03 Restarting: C:\Users\Admin\Desktop\Sclable\src\modules\applications\application.controller.ts has been modified
+Server is running on port 5000
+[0mGET /api/applications/user/me [36m304[0m 63.007 ms - -[0m
+GET /api/applications/user/me completed in 64ms
+[0mGET /api/applications/user/me [36m304[0m 4.927 ms - -[0m
+GET /api/applications/user/me completed in 5ms
+[0mGET /api/saved-jobs/me [36m304[0m 76.155 ms - -[0m
+GET /api/saved-jobs/me completed in 76ms
+[0mGET /api/saved-jobs/me [36m304[0m 3.036 ms - -[0m
+GET /api/saved-jobs/me completed in 4ms
+[0mPOST /api/auth/login [32m200[0m 58.902 ms - 373[0m
+POST /api/auth/login completed in 61ms
+[0mGET /api/companies/my-companies [36m304[0m 7.284 ms - -[0m
+GET /api/companies/my-companies completed in 8ms
+[0mGET /api/jobs/employer/my-jobs [36m304[0m 12.371 ms - -[0m
+GET /api/jobs/employer/my-jobs completed in 13ms
+[0mGET /api/companies/my-companies [36m304[0m 8.548 ms - -[0m
+GET /api/companies/my-companies completed in 9ms
+[0mGET /api/jobs/employer/my-jobs [36m304[0m 7.862 ms - -[0m
+GET /api/jobs/employer/my-jobs completed in 9ms
+[0mGET /api/companies [36m304[0m 9.794 ms - -[0m
+GET /api/companies completed in 11ms
+[0mGET /api/dashboard/public-stats [36m304[0m 17.609 ms - -[0m
+GET /api/dashboard/public-stats completed in 18ms
+Redis connected
+[0mGET /api/companies [36m304[0m 8.096 ms - -[0m
+GET /api/companies completed in 8ms
+[0mGET /api/dashboard/employer-stats [36m304[0m 23.068 ms - -[0m
+GET /api/dashboard/employer-stats completed in 24ms
+[0mGET /api/dashboard/public-stats [36m304[0m 5.957 ms - -[0m
+GET /api/dashboard/public-stats completed in 6ms
+[0mGET /api/jobs?page=1&limit=6 [36m304[0m 36.711 ms - -[0m
+GET /api/jobs?page=1&limit=6 completed in 37ms
+[0mGET /api/dashboard/employer-stats [36m304[0m 5.219 ms - -[0m
+GET /api/dashboard/employer-stats completed in 5ms
+[0mGET /api/jobs?page=1&limit=6 [36m304[0m 1.503 ms - -[0m
+GET /api/jobs?page=1&limit=6 completed in 2ms
+[0mGET /api/applications/employer/received [36m304[0m 6.816 ms - -[0m
+GET /api/applications/employer/received completed in 8ms
+[0mGET /api/applications/employer/received [36m304[0m 5.515 ms - -[0m
+GET /api/applications/employer/received completed in 7ms
+[0mGET /uploads/resumes/1779064689609-25467-PrachiBhavsar-Amazon-10414316.pdf [36m304[0m 2.468 ms - -[0m
+GET /uploads/resumes/1779064689609-25467-PrachiBhavsar-Amazon-10414316.pdf completed in 3ms
+[0mGET /uploads/resumes/1779064689609-25467-PrachiBhavsar-Amazon-10414316.pdf [36m304[0m 0.982 ms - -[0m
+GET /uploads/resumes/1779064689609-25467-PrachiBhavsar-Amazon-10414316.pdf completed in 2ms
+[INFO] 18:04:41 Restarting: C:\Users\Admin\Desktop\Sclable\src\modules\jobs\job.validation.ts has been modified
+Server is running on port 5000
+[INFO] 18:04:54 Restarting: C:\Users\Admin\Desktop\Sclable\src\modules\jobs\job.service.ts has been modified
+Server is running on port 5000
+Redis connected
+[0mGET /api/jobs?title=engineer&minSalary=70000&remoteOnly=true&sortBy=salaryHigh&page=1&limit=6 [32m200[0m 247.975 ms - 1377[0m
+GET /api/jobs?title=engineer&minSalary=70000&remoteOnly=true&sortBy=salaryHigh&page=1&limit=6 completed in 250ms
+[0mGET /api/applications/employer/received [36m304[0m 34.946 ms - -[0m
+GET /api/applications/employer/received completed in 36ms
+[0mGET /api/applications/employer/received [36m304[0m 4.213 ms - -[0m
+GET /api/applications/employer/received completed in 4ms
+[0mGET /api/applications/employer/received [36m304[0m 7.151 ms - -[0m
+GET /api/applications/employer/received completed in 8ms
+[0mGET /api/applications/employer/received [36m304[0m 6.848 ms - -[0m
+GET /api/applications/employer/received completed in 10ms
+[0mGET /api/jobs?sortBy=newest&page=1&limit=6 [32m200[0m 16.404 ms - 3069[0m
+GET /api/jobs?sortBy=newest&page=1&limit=6 completed in 17ms
+[0mGET /api/jobs?sortBy=newest&page=1&limit=6 [36m304[0m 3.865 ms - -[0m
+GET /api/jobs?sortBy=newest&page=1&limit=6 completed in 5ms
+[0mGET /api/jobs?sortBy=newest&page=1&limit=6 [36m304[0m 2.602 ms - -[0m
+GET /api/jobs?sortBy=newest&page=1&limit=6 completed in 3ms
+[0mGET /api/jobs?sortBy=salaryLow&page=1&limit=6 [32m200[0m 9.779 ms - 3035[0m
+GET /api/jobs?sortBy=salaryLow&page=1&limit=6 completed in 10ms
+[0mGET /api/jobs?jobType=FULL_TIME&sortBy=salaryLow&page=1&limit=6 [32m200[0m 13.787 ms - 2945[0m
+GET /api/jobs?jobType=FULL_TIME&sortBy=salaryLow&page=1&limit=6 completed in 15ms
+[0mGET /api/jobs?jobType=FULL_TIME&minSalary=100000&sortBy=salaryLow&page=1&limit=6 [32m200[0m 11.133 ms - 2887[0m
+GET /api/jobs?jobType=FULL_TIME&minSalary=100000&sortBy=salaryLow&page=1&limit=6 completed in 13ms
+[0mGET /api/jobs?jobType=FULL_TIME&minSalary=100000&sortBy=newest&page=1&limit=6 [32m200[0m 10.675 ms - 2912[0m
+GET /api/jobs?jobType=FULL_TIME&minSalary=100000&sortBy=newest&page=1&limit=6 completed in 11ms
+[INFO] 18:10:16 Restarting: C:\Users\Admin\Desktop\Sclable\src\modules\jobs\job.service.ts has been modified
+Server is running on port 5000
+Redis connected
+[0mGET /api/jobs?jobType=FULL_TIME&minSalary=100000&sortBy=newest&page=1&limit=6 [36m304[0m 102.687 ms - -[0m
+GET /api/jobs?jobType=FULL_TIME&minSalary=100000&sortBy=newest&page=1&limit=6 completed in 103ms
+[0mGET /api/jobs?jobType=FULL_TIME&minSalary=100000&sortBy=newest&page=1&limit=6 [36m304[0m 2.038 ms - -[0m
+GET /api/jobs?jobType=FULL_TIME&minSalary=100000&sortBy=newest&page=1&limit=6 completed in 2ms
+[0mGET /api/jobs?jobType=FULL_TIME&minSalary=100000&sortBy=newest&page=1&limit=6 [36m304[0m 1.503 ms - -[0m
+GET /api/jobs?jobType=FULL_TIME&minSalary=100000&sortBy=newest&page=1&limit=6 completed in 2ms
+[0mGET /api/jobs/2 [32m200[0m 17.796 ms - 1915[0m
+GET /api/jobs/2 completed in 19ms
+[0mGET /api/jobs?jobType=FULL_TIME&minSalary=100000&sortBy=newest&page=1&limit=6 [36m304[0m 179.957 ms - -[0m
+GET /api/jobs?jobType=FULL_TIME&minSalary=100000&sortBy=newest&page=1&limit=6 completed in 180ms
+[0mGET /api/jobs?jobType=FULL_TIME&minSalary=100000&sortBy=newest&page=1&limit=6 [36m304[0m 2.027 ms - -[0m
+GET /api/jobs?jobType=FULL_TIME&minSalary=100000&sortBy=newest&page=1&limit=6 completed in 2ms
+[0mGET /api/jobs?jobType=FULL_TIME&minSalary=100000&sortBy=newest&page=1&limit=6 [36m304[0m 2.439 ms - -[0m
+GET /api/jobs?jobType=FULL_TIME&minSalary=100000&sortBy=newest&page=1&limit=6 completed in 3ms
+[0mGET /api/jobs/33 [32m200[0m 10.939 ms - 2356[0m
+GET /api/jobs/33 completed in 11ms
+[0mGET /api/jobs/33 [36m304[0m 7.669 ms - -[0m
+GET /api/jobs/33 completed in 8ms
+[0mGET /api/companies/8 [32m200[0m 7.690 ms - 1194[0m
+GET /api/companies/8 completed in 9ms
+[0mGET /api/companies/8 [36m304[0m 5.490 ms - -[0m
+GET /api/companies/8 completed in 7ms
+[0mGET /api/jobs/33 [36m304[0m 6.675 ms - -[0m
+GET /api/jobs/33 completed in 8ms
+[0mGET /api/jobs/33 [36m304[0m 6.390 ms - -[0m
+GET /api/jobs/33 completed in 7ms
+[0mGET /api/jobs?jobType=FULL_TIME&minSalary=100000&sortBy=newest&page=1&limit=6 [36m304[0m 3.153 ms - -[0m
+GET /api/jobs?jobType=FULL_TIME&minSalary=100000&sortBy=newest&page=1&limit=6 completed in 4ms
+[0mGET /api/jobs?jobType=FULL_TIME&minSalary=100000&sortBy=newest&page=1&limit=6 [36m304[0m 3.294 ms - -[0m
+GET /api/jobs?jobType=FULL_TIME&minSalary=100000&sortBy=newest&page=1&limit=6 completed in 4ms
+[0mGET /api/jobs?jobType=FULL_TIME&minSalary=100000&sortBy=newest&page=1&limit=6 [36m304[0m 3.577 ms - -[0m
+GET /api/jobs?jobType=FULL_TIME&minSalary=100000&sortBy=newest&page=1&limit=6 completed in 5ms
+[0mGET /api/jobs?jobType=FULL_TIME&minSalary=100000&sortBy=newest&page=2&limit=6 [32m200[0m 11.121 ms - 507[0m
+GET /api/jobs?jobType=FULL_TIME&minSalary=100000&sortBy=newest&page=2&limit=6 completed in 12ms
+[0mGET /api/jobs?jobType=FULL_TIME&minSalary=100000&sortBy=newest&page=1&limit=6 [36m304[0m 2.670 ms - -[0m
+GET /api/jobs?jobType=FULL_TIME&minSalary=100000&sortBy=newest&page=1&limit=6 completed in 3ms
+[0mGET /api/jobs?sortBy=newest&page=1&limit=6 [36m304[0m 7.760 ms - -[0m
+GET /api/jobs?sortBy=newest&page=1&limit=6 completed in 8ms
+[0mGET /api/jobs?sortBy=newest&page=2&limit=6 [32m200[0m 7.537 ms - 3028[0m
+GET /api/jobs?sortBy=newest&page=2&limit=6 completed in 9ms
+[0mGET /api/jobs?sortBy=newest&page=3&limit=6 [32m200[0m 6.700 ms - 1387[0m
+GET /api/jobs?sortBy=newest&page=3&limit=6 completed in 8ms
+[0mGET /api/dashboard/public-stats [36m304[0m 263.148 ms - -[0m
+GET /api/dashboard/public-stats completed in 264ms
+[0mGET /api/companies [36m304[0m 260.759 ms - -[0m
+GET /api/companies completed in 262ms
+[0mGET /api/jobs?sortBy=newest&page=1&limit=6 [36m304[0m 275.839 ms - -[0m
+GET /api/jobs?sortBy=newest&page=1&limit=6 completed in 277ms
+[0mGET /api/dashboard/public-stats [36m304[0m 4.831 ms - -[0m
+GET /api/dashboard/public-stats completed in 5ms
+[0mGET /api/jobs?sortBy=newest&page=1&limit=6 [36m304[0m 2.557 ms - -[0m
+GET /api/jobs?sortBy=newest&page=1&limit=6 completed in 3ms
+[0mGET /api/companies [36m304[0m 7.290 ms - -[0m
+GET /api/companies completed in 8ms
+[0mGET /api/dashboard/employer-stats [36m304[0m 273.109 ms - -[0m
+GET /api/dashboard/employer-stats completed in 274ms
+[0mGET /api/dashboard/employer-stats [36m304[0m 5.969 ms - -[0m
+GET /api/dashboard/employer-stats completed in 7ms
+[0mGET /api/companies/my-companies [36m304[0m 10.697 ms - -[0m
+GET /api/companies/my-companies completed in 11ms
+[0mGET /api/jobs/employer/my-jobs [36m304[0m 13.793 ms - -[0m
+GET /api/jobs/employer/my-jobs completed in 14ms
+[0mGET /api/companies/my-companies [36m304[0m 6.643 ms - -[0m
+GET /api/companies/my-companies completed in 8ms
+[0mGET /api/jobs/employer/my-jobs [36m304[0m 6.444 ms - -[0m
+GET /api/jobs/employer/my-jobs completed in 7ms
+[0mGET /api/jobs?sortBy=newest&page=1&limit=6 [36m304[0m 7.807 ms - -[0m
+GET /api/jobs?sortBy=newest&page=1&limit=6 completed in 9ms
+[0mGET /api/companies [36m304[0m 10.378 ms - -[0m
+GET /api/companies completed in 12ms
+[0mGET /api/dashboard/public-stats [36m304[0m 12.045 ms - -[0m
+GET /api/dashboard/public-stats completed in 12ms
+[0mGET /api/dashboard/employer-stats [36m304[0m 15.992 ms - -[0m
+GET /api/dashboard/employer-stats completed in 17ms
+[0mGET /api/jobs?sortBy=newest&page=1&limit=6 [36m304[0m 7.687 ms - -[0m
+GET /api/jobs?sortBy=newest&page=1&limit=6 completed in 9ms
+[0mGET /api/companies [36m304[0m 8.466 ms - -[0m
+GET /api/companies completed in 10ms
+[0mGET /api/dashboard/public-stats [36m304[0m 12.008 ms - -[0m
+GET /api/dashboard/public-stats completed in 12ms
+[0mGET /api/dashboard/employer-stats [36m304[0m 8.370 ms - -[0m
+GET /api/dashboard/employer-stats completed in 8ms
+[0mGET /api/applications/employer/received [36m304[0m 7.454 ms - -[0m
+GET /api/applications/employer/received completed in 8ms
+[0mGET /api/applications/employer/received [36m304[0m 7.425 ms - -[0m
+GET /api/applications/employer/received completed in 8ms
+[0mGET /uploads/resumes/1779064689609-25467-PrachiBhavsar-Amazon-10414316.pdf [36m304[0m 8.457 ms - -[0m
+GET /uploads/resumes/1779064689609-25467-PrachiBhavsar-Amazon-10414316.pdf completed in 10ms
+[0mGET /api/jobs?sortBy=newest&page=1&limit=6 [36m304[0m 11.863 ms - -[0m
+GET /api/jobs?sortBy=newest&page=1&limit=6 completed in 14ms
+[0mGET /api/companies [36m304[0m 14.610 ms - -[0m
+GET /api/companies completed in 15ms
+[0mGET /api/dashboard/public-stats [36m304[0m 16.270 ms - -[0m
+GET /api/dashboard/public-stats completed in 17ms
+[0mGET /api/dashboard/employer-stats [36m304[0m 18.063 ms - -[0m
+GET /api/dashboard/employer-stats completed in 19ms
+[0mGET /api/jobs?sortBy=newest&page=1&limit=6 [36m304[0m 3.222 ms - -[0m
+GET /api/jobs?sortBy=newest&page=1&limit=6 completed in 3ms
+[0mGET /api/companies [36m304[0m 4.404 ms - -[0m
+GET /api/companies completed in 5ms
+[0mGET /api/dashboard/public-stats [36m304[0m 7.059 ms - -[0m
+GET /api/dashboard/public-stats completed in 7ms
+[0mGET /api/dashboard/employer-stats [36m304[0m 8.349 ms - -[0m
+GET /api/dashboard/employer-stats completed in 9ms
+[0mGET /api/jobs?location=Remote&sortBy=newest&page=1&limit=6 [32m200[0m 13.144 ms - 2876[0m
+GET /api/jobs?location=Remote&sortBy=newest&page=1&limit=6 completed in 15ms
+[0mGET /api/jobs?location=Remote&sortBy=newest&page=1&limit=6 [36m304[0m 1.940 ms - -[0m
+GET /api/jobs?location=Remote&sortBy=newest&page=1&limit=6 completed in 3ms
+[0mGET /api/jobs?location=Remote&sortBy=newest&page=1&limit=6 [36m304[0m 2.543 ms - -[0m
+GET /api/jobs?location=Remote&sortBy=newest&page=1&limit=6 completed in 4ms
+[0mGET /api/jobs?sortBy=newest&page=1&limit=6 [36m304[0m 7.704 ms - -[0m
+GET /api/jobs?sortBy=newest&page=1&limit=6 completed in 9ms
+[0mGET /api/companies [36m304[0m 10.291 ms - -[0m
+GET /api/companies completed in 12ms
+[0mGET /api/dashboard/public-stats [36m304[0m 10.375 ms - -[0m
+GET /api/dashboard/public-stats completed in 11ms
+[0mGET /api/dashboard/employer-stats [36m304[0m 14.049 ms - -[0m
+GET /api/dashboard/employer-stats completed in 14ms
+[0mGET /api/jobs?sortBy=newest&page=1&limit=6 [36m304[0m 5.712 ms - -[0m
+GET /api/jobs?sortBy=newest&page=1&limit=6 completed in 7ms
+[0mGET /api/companies [36m304[0m 6.412 ms - -[0m
+GET /api/companies completed in 8ms
+[0mGET /api/dashboard/public-stats [36m304[0m 11.311 ms - -[0m
+GET /api/dashboard/public-stats completed in 12ms
+[0mGET /api/dashboard/employer-stats [36m304[0m 7.344 ms - -[0m
+GET /api/dashboard/employer-stats completed in 8ms
+[0mGET /api/jobs?location=Remote&sortBy=newest&page=1&limit=6 [36m304[0m 4.330 ms - -[0m
+GET /api/jobs?location=Remote&sortBy=newest&page=1&limit=6 completed in 5ms
+[0mGET /api/jobs?location=Remote&sortBy=newest&page=1&limit=6 [36m304[0m 2.025 ms - -[0m
+GET /api/jobs?location=Remote&sortBy=newest&page=1&limit=6 completed in 3ms
+[0mGET /api/jobs?location=Remote&sortBy=newest&page=1&limit=6 [36m304[0m 1.935 ms - -[0m
+GET /api/jobs?location=Remote&sortBy=newest&page=1&limit=6 completed in 2ms
+[0mGET /api/jobs?sortBy=newest&page=1&limit=6 [36m304[0m 9.738 ms - -[0m
+GET /api/jobs?sortBy=newest&page=1&limit=6 completed in 11ms
+[0mGET /api/companies [36m304[0m 13.226 ms - -[0m
+GET /api/companies completed in 14ms
+[0mGET /api/dashboard/public-stats [36m304[0m 13.881 ms - -[0m
+GET /api/dashboard/public-stats completed in 15ms
+[0mGET /api/dashboard/employer-stats [36m304[0m 20.540 ms - -[0m
+GET /api/dashboard/employer-stats completed in 21ms
+[0mGET /api/jobs?sortBy=newest&page=1&limit=6 [36m304[0m 8.748 ms - -[0m
+GET /api/jobs?sortBy=newest&page=1&limit=6 completed in 10ms
+[0mGET /api/companies [36m304[0m 10.437 ms - -[0m
+GET /api/companies completed in 11ms
+[0mGET /api/dashboard/public-stats [36m304[0m 14.899 ms - -[0m
+GET /api/dashboard/public-stats completed in 16ms
+[0mGET /api/dashboard/employer-stats [36m304[0m 9.816 ms - -[0m
+GET /api/dashboard/employer-stats completed in 11ms
+[0mGET /api/jobs?sortBy=newest&page=1&limit=6 [36m304[0m 4.929 ms - -[0m
+GET /api/jobs?sortBy=newest&page=1&limit=6 completed in 7ms
+[0mGET /api/jobs?sortBy=newest&page=1&limit=6 [36m304[0m 4.977 ms - -[0m
+GET /api/jobs?sortBy=newest&page=1&limit=6 completed in 6ms
+[0mGET /api/jobs?sortBy=newest&page=1&limit=6 [36m304[0m 1.792 ms - -[0m
+GET /api/jobs?sortBy=newest&page=1&limit=6 completed in 2ms
+[0mGET /api/companies [36m304[0m 6.613 ms - -[0m
+GET /api/companies completed in 7ms
+[0mGET /api/companies [36m304[0m 3.826 ms - -[0m
+GET /api/companies completed in 4ms
+[0mGET /api/companies/my-companies [36m304[0m 4.017 ms - -[0m
+GET /api/companies/my-companies completed in 5ms
+[0mGET /api/jobs/employer/my-jobs [36m304[0m 6.139 ms - -[0m
+GET /api/jobs/employer/my-jobs completed in 7ms
+[0mGET /api/companies/my-companies [36m304[0m 7.827 ms - -[0m
+GET /api/companies/my-companies completed in 9ms
+[0mGET /api/jobs/employer/my-jobs [36m304[0m 10.038 ms - -[0m
+GET /api/jobs/employer/my-jobs completed in 11ms
+[0mPOST /api/auth/login [32m200[0m 60.618 ms - 384[0m
+POST /api/auth/login completed in 61ms
+[0mGET /api/jobs?sortBy=newest&page=1&limit=6 [36m304[0m 8.266 ms - -[0m
+GET /api/jobs?sortBy=newest&page=1&limit=6 completed in 8ms
+[0mGET /api/jobs?sortBy=newest&page=1&limit=6 [36m304[0m 2.410 ms - -[0m
+GET /api/jobs?sortBy=newest&page=1&limit=6 completed in 4ms
+[0mGET /api/jobs?sortBy=newest&page=1&limit=6 [36m304[0m 1.884 ms - -[0m
+GET /api/jobs?sortBy=newest&page=1&limit=6 completed in 3ms
+[0mGET /api/applications/user/me [36m304[0m 7.951 ms - -[0m
+GET /api/applications/user/me completed in 8ms
+[0mGET /api/saved-jobs/me [36m304[0m 12.279 ms - -[0m
+GET /api/saved-jobs/me completed in 13ms
+[0mGET /api/applications/user/me [36m304[0m 5.781 ms - -[0m
+GET /api/applications/user/me completed in 7ms
+[0mGET /api/saved-jobs/me [36m304[0m 10.420 ms - -[0m
+GET /api/saved-jobs/me completed in 11ms
+[0mGET /api/jobs?sortBy=newest&page=1&limit=6 [36m304[0m 2.957 ms - -[0m
+GET /api/jobs?sortBy=newest&page=1&limit=6 completed in 3ms
+[0mGET /api/companies [36m304[0m 4.237 ms - -[0m
+GET /api/companies completed in 5ms
+[0mGET /api/dashboard/public-stats [36m304[0m 6.130 ms - -[0m
+GET /api/dashboard/public-stats completed in 7ms
+[0mGET /api/applications/user/21 [36m304[0m 8.377 ms - -[0m
+GET /api/applications/user/21 completed in 10ms
+[0mGET /api/jobs?sortBy=newest&page=1&limit=6 [36m304[0m 9.150 ms - -[0m
+GET /api/jobs?sortBy=newest&page=1&limit=6 completed in 12ms
+[0mGET /api/companies [36m304[0m 12.462 ms - -[0m
+GET /api/companies completed in 13ms
+[0mGET /api/dashboard/public-stats [36m304[0m 11.276 ms - -[0m
+GET /api/dashboard/public-stats completed in 13ms
+[0mGET /api/applications/user/21 [36m304[0m 8.724 ms - -[0m
+GET /api/applications/user/21 completed in 9ms
+[0mGET /api/companies [36m304[0m 2.980 ms - -[0m
+GET /api/companies completed in 5ms
+[0mGET /api/companies [36m304[0m 3.294 ms - -[0m
+GET /api/companies completed in 4ms
+[0mGET /api/applications/user/me [36m304[0m 4.247 ms - -[0m
+GET /api/applications/user/me completed in 5ms
+[0mGET /api/applications/user/me [36m304[0m 3.960 ms - -[0m
+GET /api/applications/user/me completed in 5ms
+[0mGET /api/applications/user/me [36m304[0m 4.724 ms - -[0m
+GET /api/applications/user/me completed in 7ms
+[0mGET /api/saved-jobs/me [36m304[0m 5.550 ms - -[0m
+GET /api/saved-jobs/me completed in 6ms
+[0mGET /api/applications/user/me [36m304[0m 4.305 ms - -[0m
+GET /api/applications/user/me completed in 6ms
+[0mGET /api/saved-jobs/me [36m304[0m 9.474 ms - -[0m
+GET /api/saved-jobs/me completed in 10ms
+[0mGET /api/jobs?sortBy=newest&page=1&limit=6 [36m304[0m 4.393 ms - -[0m
+GET /api/jobs?sortBy=newest&page=1&limit=6 completed in 6ms
+[0mGET /api/companies [36m304[0m 6.141 ms - -[0m
+GET /api/companies completed in 7ms
+[0mGET /api/dashboard/public-stats [36m304[0m 7.103 ms - -[0m
+GET /api/dashboard/public-stats completed in 8ms
+[0mGET /api/applications/user/21 [36m304[0m 10.020 ms - -[0m
+GET /api/applications/user/21 completed in 11ms
+[0mGET /api/jobs?sortBy=newest&page=1&limit=6 [36m304[0m 10.677 ms - -[0m
+GET /api/jobs?sortBy=newest&page=1&limit=6 completed in 12ms
+[0mGET /api/companies [36m304[0m 9.104 ms - -[0m
+GET /api/companies completed in 10ms
+[0mGET /api/dashboard/public-stats [36m304[0m 9.749 ms - -[0m
+GET /api/dashboard/public-stats completed in 11ms
+[0mGET /api/applications/user/21 [36m304[0m 9.580 ms - -[0m
+GET /api/applications/user/21 completed in 10ms
+[0mGET /api/jobs?sortBy=newest&page=1&limit=6 [36m304[0m 2.260 ms - -[0m
+GET /api/jobs?sortBy=newest&page=1&limit=6 completed in 4ms
+[0mGET /api/companies [36m304[0m 3.791 ms - -[0m
+GET /api/companies completed in 4ms
+[0mGET /api/dashboard/public-stats [36m304[0m 4.587 ms - -[0m
+GET /api/dashboard/public-stats completed in 6ms
