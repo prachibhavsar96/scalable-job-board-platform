@@ -55,21 +55,65 @@ The project demonstrates production-minded patterns such as JWT authentication, 
 
 ## Screenshots
 
-Add screenshots here before publishing:
+# Screenshots
 
-- Home Page
-- Jobs Page
-- Employer Dashboard
-- Candidate Dashboard
-- Applications Page
+## Home Page
 
-```text
-screenshots/home.png
-screenshots/jobs.png
-screenshots/employer-dashboard.png
-screenshots/candidate-dashboard.png
-screenshots/applications.png
-```
+![Home Page](./frontend/public/screenshots/home-page.png)
+
+---
+
+## Smart Job Search
+
+![Job Search](./frontend/public/screenshots/job-search.png)
+
+---
+
+## Jobs Page
+
+![Jobs Page](./frontend/public/screenshots/jobs-page.png)
+
+---
+
+## Companies Page
+
+![Companies Page](./frontend/public/screenshots/companies-page.png)
+
+---
+
+## Candidate Dashboard
+
+![Candidate Dashboard](./frontend/public/screenshots/candidate-dashboard.png)
+
+---
+
+## Saved Jobs
+
+![Saved Jobs](./frontend/public/screenshots/saved-jobs.png)
+
+---
+
+## My Applications
+
+![My Applications](./frontend/public/screenshots/my-applications.png)
+
+---
+
+## Employer Stats
+
+![Employer Stats](./frontend/public/screenshots/employer-stats.png)
+
+---
+
+## Employer Dashboard
+
+![Employer Dashboard](./frontend/public/screenshots/employer-dashboard.png)
+
+---
+
+## Applications Received
+
+![Applications Received](./frontend/public/screenshots/applications-received.png)
 
 ## Tech Stack
 
